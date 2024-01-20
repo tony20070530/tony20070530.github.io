@@ -1,0 +1,40 @@
+/* 修改樣式之後建議強制重新整理 [Ctrl] + [F5] */
+/* 標準標籤 */
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body, button, html, input, select {
+      font-family: "Microsoft JhengHei";
+  }
+  
+  .btn:hover {
+      cursor: pointer;
+  }
+  
+  .btn-ttt {
+      border: 0px;
+      border-radius: 5px;
+      font-size: 32px;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 5px 2px;
+      width: 80px;
+      height: 80px;
+  }
+  
+  .btn-ttt:hover {
+      color: #fff;
+      font-weight: normal;
+  }
+  
+  ol li {
+      font-size: 24px;
+  }
+  
+  .result {
+      color: #4169E1;
+      font-size: 48px;
+      font-weight: bold;
+  }
