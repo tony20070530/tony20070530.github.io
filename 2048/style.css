@@ -1,0 +1,123 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* 定義整個頁面的樣式 */
+  body, html {
+      height: 100%; /* 使頁面高度100% */
+      margin: 0; /* 清除頁面預設邊距 */
+      display: flex; /* 使用 Flexbox 佈局 */
+      justify-content: center; /* 水平居中 */
+      align-items: center; /* 垂直居中 */
+  }
+  
+  /* 定義容器的樣式 */
+  .container {
+      display: flex; /* 使用 Flexbox 佈局 */
+      flex-direction: column; /* 將容器的方向設置為垂直 */
+      align-items: flex-start; /* 將容器內元素水平居中 */
+  }
+  
+  /* 定義左側數字按鈕網格的樣式 */
+  .button-grid {
+      display: grid; /* 使用 CSS Grid 佈局 */
+      grid-template-columns: repeat(4, 150px); /* 調整每個列的寬度 */
+      grid-template-rows: repeat(4, 150px); /* 調整每個行的高度 */
+      gap: 10px; /* 按鈕之間的間距 */
+  }
+  
+  /* 定義按鈕的樣式 */
+  .button {
+      background-color: #4CAF50; /* 設置按鈕背景色 */
+      border: none; /* 清除按鈕邊框 */
+      color: white; /* 設置按鈕文字顏色 */
+      text-align: center; /* 文字水平居中 */
+      text-decoration: none; /* 清除文字下劃線 */
+      display: inline-block; /* 使按鈕表現為行內元素 */
+      font-size: 30px; /* 設置按鈕文字大小 */
+      cursor: pointer; /* 設置鼠標指針為手型 */
+      width: 100%; /* 使按鈕寬度填滿父容器 */
+      height: 100%; /* 使按鈕高度填滿父容器 */
+  }
+  
+  /* 定義右側方向按鈕網格的樣式 */
+  .direction-buttons {
+      display: grid; /* 使用 CSS Grid 佈局 */
+      grid-template-columns: repeat(2, 100px); /* 調整每個列的寬度 */
+      grid-template-rows: repeat(2, 100px); /* 調整每個行的高度 */
+      gap: 10px; /* 按鈕之間的間距 */
+  }
+  
+  /* 定義方向按鈕的樣式 */
+  .direction-button {
+      background-color: #4CAF50; /* 設置按鈕背景色 */
+      border: none; /* 清除按鈕邊框 */
+      color: white; /* 設置按鈕文字顏色 */
+      text-align: center; /* 文字水平居中 */
+      text-decoration: none; /* 清除文字下劃線 */
+      display: inline-block; /* 使按鈕表現為行內元素 */
+      font-size: 40px; /* 調整方向按鈕的字體大小 */
+      cursor: pointer; /* 設置鼠標指針為手型 */
+      width: 100%; /* 使按鈕寬度填滿父容器 */
+      height: 100%; /* 使按鈕高度填滿父容器 */
+  }
+  
+  /* 分隔線樣式 */
+  .divider {
+      width: 100%; /* 分隔線寬度 */
+      /* height: 2px; /* 分隔線高度 */ 
+      background-color: #ccc; /* 分隔線顏色 */
+      margin: 10px 0; /* 分隔線與上下元素的間距 */
+  }
+  
+  .nothing {
+      background-color: #ffffff; /* 設置按鈕背景色 */
+      border: none;
+      display: grid; /* 使用 CSS Grid 佈局 */
+      grid-template-columns: repeat(1, 30px); /* 調整每個列的寬度 */
+      grid-template-rows: repeat(1, 30px); /* 調整每個行的高度 */
+  }
+  
+  @media screen and (max-width: 800px) {
+      .button-grid {
+          grid-template-columns: repeat(4, 75px); /* 將數字按鈕網格改為兩列 */
+          grid-template-rows: repeat(4, 75px); /* 調整行高度 */
+      }
+  
+      .button {
+          background-color: #4CAF50; /* 設置按鈕背景色 */
+          border: none; /* 清除按鈕邊框 */
+          color: white; /* 設置按鈕文字顏色 */
+          text-align: center; /* 文字水平居中 */
+          text-decoration: none; /* 清除文字下劃線 */
+          display: inline-block; /* 使按鈕表現為行內元素 */
+          font-size: 20px; /* 設置按鈕文字大小 */
+          cursor: pointer; /* 設置鼠標指針為手型 */
+          width: 100%; /* 使按鈕寬度填滿父容器 */
+          height: 100%; /* 使按鈕高度填滿父容器 */
+      }
+  
+      .direction-buttons {
+          grid-template-columns: repeat(1, 30px); /* 將方向按鈕網格改為一列 */
+          grid-template-rows: repeat(4, 30px); /* 調整行高度 */
+      }
+  
+      .direction-button {
+          background-color: #4CAF50; /* 設置按鈕背景色 */
+          border: none; /* 清除按鈕邊框 */
+          color: white; /* 設置按鈕文字顏色 */
+          text-align: center; /* 文字水平居中 */
+          text-decoration: none; /* 清除文字下劃線 */
+          display: inline-block; /* 使按鈕表現為行內元素 */
+          font-size: 15px; /* 調整方向按鈕的字體大小 */
+          cursor: pointer; /* 設置鼠標指針為手型 */
+          width: 100%; /* 使按鈕寬度填滿父容器 */
+          height: 100%; /* 使按鈕高度填滿父容器 */
+      }
+  
+      .nothing {
+          grid-template-columns: repeat(1, 15px); /* 將方向按鈕��格改為一列 */
+          grid-template-rows: repeat(1, 15px); /* 調整行高度 */
+      }
+  }
